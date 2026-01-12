@@ -1,0 +1,38 @@
+/* Root styles for the task form */
+.root {
+    -fx-background-color: #f0f0f0; /* Light gray background */
+    -fx-padding: 20px;
+}
+
+/* Styles for labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Styles for text fields */
+.text-field {
+    -fx-font-size: 14px;
+    -fx-padding: 5px;
+    -fx-pref-width: 300px;
+}
+
+/* Styles for buttons */
+.button {
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-color: #4CAF50; /* Green background */
+    -fx-text-fill: white; /* White text */
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+/* Styles for HBox layout */
+.hbox {
+    -fx-spacing: 20px;
+}
+
+/* Styles for VBox layout */
+.vbox {
+    -fx-spacing: 15px;
+}

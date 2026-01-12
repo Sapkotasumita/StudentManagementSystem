@@ -1,0 +1,44 @@
+.text-field, .password-field {
+    -fx-background-color: #F0F0F0;
+    -fx-padding: 8px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #CCCCCC;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555555;
+}
+
+.button {
+    -fx-background-color: #FF9800;
+    -fx-text-fill: white;
+    -fx-padding: 10px 25px;
+    -fx-border-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8px;
+    -fx-effect: dropshadow(three-pass-box, #888888, 10, 0, 0, 0);
+}
+
+#signupButton {
+    -fx-background-color: #4CAF50; /* Green */
+}
+
+#cancelButton {
+    -fx-background-color: #F44336; /* Red */
+}
+
+/* Styling for the AnchorPane */
+.anchor-pane {
+    -fx-background-color: linear-gradient(to bottom right, #00BCD4, #2196F3); /* Gradient from Cyan to Blue */
+}
+
+/* Styling for the main container */
+.container {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+    -fx-effect: dropshadow(three-pass-box, #AAAAAA, 10, 0, 5, 5);
+}
+

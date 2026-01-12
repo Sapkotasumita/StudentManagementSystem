@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="640.0" prefWidth="952.0" stylesheets="@dashboard.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dsgroup1.Controller.DashboardController">
+    <children>
+        <!-- Header and Navigation Bar -->
+        <Rectangle fx:id="headerRectangle" arcHeight="5.0" arcWidth="5.0" fill="#f7fbf8" height="640.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+        <Rectangle fx:id="navBarRectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="73.0" layoutX="199.0" stroke="BLACK" strokeType="INSIDE" width="751.0" />
+
+        <!-- Navigation Buttons -->
+        <Button fx:id="attendanceButton" layoutX="41.0" layoutY="178.0" mnemonicParsing="false" onAction="#loadAttendance" prefHeight="32.0" prefWidth="117.0" styleClass="action-button" text="Attendance" textFill="WHITE" />
+        <Button fx:id="counselingButton" layoutX="41.0" layoutY="238.0" mnemonicParsing="false" onAction="#loadCounseling" prefHeight="32.0" prefWidth="117.0" styleClass="action-button" text="Counseling" />
+        <Button fx:id="studentReportButton" layoutX="37.0" layoutY="304.0" mnemonicParsing="false" onAction="#loadReports" prefHeight="32.0" prefWidth="125.0" styleClass="action-button" text="Reports" />
+        <Button fx:id="studentFormButton" layoutX="204.0" layoutY="206.0" mnemonicParsing="false" onAction="#loadStudentForm" prefHeight="32.0" prefWidth="125.0" styleClass="action-button" text="Student Form" />
+        <Button fx:id="teacherFormButton" layoutX="592.0" layoutY="162.0" mnemonicParsing="false" onAction="#loadTeacherForm" prefHeight="32.0" prefWidth="125.0" styleClass="action-button" text="Teacher Form" />
+        <Button fx:id="questionFormButton" layoutX="204.0" layoutY="248.0" onAction="#loadQuestionForm" prefHeight="32.0" prefWidth="125.0" styleClass="action-button" text="Question Form" />
+
+        <!-- Logout Button -->
+        <Button fx:id="logoutButton" layoutX="34.0" layoutY="597.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="32.0" prefWidth="117.0" styleClass="action-button" text="Logout" />
+
+        <!-- Statistics Section -->
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="65.0" layoutX="200.0" layoutY="72.0" stroke="BLACK" strokeType="INSIDE" width="165.0" />
+        <Label layoutX="229.0" layoutY="74.0" prefHeight="34.0" prefWidth="102.0" text="Total Students" textFill="#3a3737">
+            <font>
+                <Font name="Cambria" size="14.0" />
+            </font>
+        </Label>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="65.0" layoutX="364.0" layoutY="72.0" stroke="BLACK" strokeType="INSIDE" width="187.0" />
+        <Label layoutX="415.0" layoutY="82.0" text="Total Faculties">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+
+        <!-- Bar Charts -->
+        <BarChart layoutX="247.0" layoutY="305.0" prefHeight="282.0" prefWidth="309.0">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </BarChart>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#828f94" height="208.0" layoutX="313.0" layoutY="354.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6bd95f" height="124.0" layoutX="364.0" layoutY="436.0" stroke="BLACK" strokeType="INSIDE" width="25.0" />
+        <Label layoutX="326.0" layoutY="583.0" text="Distribution of Students" textFill="#2d2b2b">
+            <font>
+                <Font size="19.0" />
+            </font>
+        </Label>
+
+        <!-- More Statistics and Charts -->
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="65.0" layoutX="550.0" layoutY="72.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+        <BarChart layoutX="563.0" layoutY="305.0" prefHeight="282.0" prefWidth="359.0">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </BarChart>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9f939d" height="194.0" layoutX="665.0" layoutY="369.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#42ba48" height="95.0" layoutX="740.0" layoutY="465.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+        <Label layoutX="655.0" layoutY="584.0" text="Attendance of the Students" textFill="#262020">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <Button fx:id="studentFormButton1" layoutX="204.0" layoutY="162.0" mnemonicParsing="false" onAction="#loadStudentProblemForm" prefHeight="32.0" prefWidth="125.0" styleClass="action-button" text="Student Problem Form" />
+        <Button fx:id="studentReportButton1" layoutX="37.0" layoutY="369.0" mnemonicParsing="false" onAction="#loadQuestionBank" prefHeight="32.0" prefWidth="125.0" styleClass="action-button" text="Question Bank" />
+        <Button fx:id="studentReportButton11" layoutX="37.0" layoutY="426.0" mnemonicParsing="false" onAction="#loadLibrary" prefHeight="32.0" prefWidth="125.0" styleClass="action-button" text="Library" />
+        <Button fx:id="studentReportButton111" layoutX="37.0" layoutY="482.0" mnemonicParsing="false" onAction="#loadTasks" prefHeight="32.0" prefWidth="125.0" styleClass="action-button" text="Tasks" />
+        <Button fx:id="studentReportButton112" layoutX="390.0" layoutY="162.0" mnemonicParsing="false" onAction="#loadAdminForm" prefHeight="32.0" prefWidth="125.0" styleClass="action-button" text="Admin form" />
+        <TextField layoutX="52.0" layoutY="122.0" prefHeight="25.0" prefWidth="117.0" text="Dashboard">
+         <font>
+            <Font size="13.0" />
+         </font></TextField>
+        <ImageView fitHeight="91.0" fitWidth="132.0" layoutX="34.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@dashboard2.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="596.0" layoutY="81.0" prefHeight="20.0" prefWidth="117.0" text="Total Teachers">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="211.0" layoutY="18.0" prefHeight="43.0" prefWidth="132.0" text="Welcome Back">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="65.0" layoutX="750.0" layoutY="72.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Label layoutX="801.0" layoutY="82.0" text="Total Staffs">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="622.0" layoutY="104.0" text="200" />
+      <Label layoutX="821.0" layoutY="104.0" text="100" />
+      <Label layoutX="247.0" layoutY="104.0" text="2500" />
+      <Label layoutX="446.0" layoutY="104.0" text="4" />
+      <ImageView fitHeight="43.0" fitWidth="438.0" layoutX="390.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@search.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="52.0" fitWidth="61.0" layoutX="877.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@admin1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="338.0" layoutY="27.0" prefHeight="26.0" prefWidth="30.0" text="👋" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+/* ListView styling */
+.list-view {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #d3d3d3;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+}
+
+/* Button styling */
+.button {
+    -fx-background-color: #4CAF50; /* Green background */
+    -fx-text-fill: white;         /* White text */
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;      /* Rounded corners */
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* Darker green on hover */
+}
+
+/* Add Question button */
+#addQuestionButton {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+}
+
+#addQuestionButton:hover {
+    -fx-background-color: #45a049;
+}
+
+/* Remove Question button */
+#removeQuestionButton {
+    -fx-background-color: #f44336;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+}
+
+#removeQuestionButton:hover {
+    -fx-background-color: #e53935;
+}

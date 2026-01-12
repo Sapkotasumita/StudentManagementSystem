@@ -1,0 +1,63 @@
+/* adminform.css */
+
+/* Style for the root AnchorPane */
+.anchor-pane {
+    -fx-padding: 20;
+    -fx-background-color: #f0f4f7;
+}
+
+/* Style for the VBox */
+.vbox {
+    -fx-spacing: 10;
+}
+
+/* Style for the HBox */
+.hbox {
+    -fx-spacing: 10;
+}
+
+/* Style for Labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Style for TextFields */
+.text-field {
+    -fx-pref-width: 200px;
+    -fx-padding: 5px;
+    -fx-border-color: #b0c4de;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+}
+
+/* Style for Buttons */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+.button:pressed {
+    -fx-background-color: #3e8e41;
+}
+
+/* Style for TableView */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #b0c4de;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+}
+
+/* Style for TableColumns */
+.table-column {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,41 @@
+/* Styles for the AnchorPane */
+.anchor-pane {
+    -fx-background-color: #f0f0f0;
+}
+
+/* Styles for TextFields */
+.text-field {
+    -fx-pref-width: 200px;
+    -fx-padding: 5px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+/* Styles for Labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+/* Styles for ChoiceBox */
+.choice-box {
+    -fx-pref-width: 200px;
+    -fx-padding: 5px;
+}
+
+/* Styles for Buttons */
+.button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    -fx-background-color: #0056b3;
+}

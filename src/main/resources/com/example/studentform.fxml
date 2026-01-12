@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dsgroup1.Controller.StudentFormController">
+    <stylesheets>
+        <URL value="@studentform.css" />
+    </stylesheets>
+    <children>
+        <!-- Text Fields and Labels -->
+        <TextField fx:id="studentIdField" layoutX="150.0" layoutY="50.0" />
+        <TextField fx:id="usernameField" layoutX="150.0" layoutY="90.0" />
+        <TextField fx:id="passwordField" layoutX="150.0" layoutY="130.0" />
+        <TextField fx:id="firstNameField" layoutX="150.0" layoutY="170.0" />
+        <TextField fx:id="lastNameField" layoutX="150.0" layoutY="210.0" />
+        <TextField fx:id="facultyField" layoutX="150.0" layoutY="250.0" />
+        <TextField fx:id="emailField" layoutX="150.0" layoutY="290.0" />
+        <TextField fx:id="phoneNoField" layoutX="150.0" layoutY="330.0" />
+        <ChoiceBox fx:id="genderChoiceBox" layoutX="150.0" layoutY="370.0" />
+
+        <Label text="Student ID:" layoutX="50.0" layoutY="50.0" />
+        <Label text="Username:" layoutX="50.0" layoutY="90.0" />
+        <Label text="Password:" layoutX="50.0" layoutY="130.0" />
+        <Label text="First Name:" layoutX="50.0" layoutY="170.0" />
+        <Label text="Last Name:" layoutX="50.0" layoutY="210.0" />
+        <Label text="Faculty:" layoutX="50.0" layoutY="250.0" />
+        <Label text="Email:" layoutX="50.0" layoutY="290.0" />
+        <Label text="Phone No:" layoutX="50.0" layoutY="330.0" />
+        <Label text="Gender:" layoutX="50.0" layoutY="370.0" />
+
+        <!-- Buttons -->
+        <Button text="Add" layoutX="50.0" layoutY="420.0" onAction="#handleAdd"/>
+        <Button text="Remove" layoutX="150.0" layoutY="420.0" onAction="#handleRemove"/>
+        <Button text="Submit" layoutX="250.0" layoutY="420.0" onAction="#handleSubmit"/>
+        <Button text="Cancel" layoutX="350.0" layoutY="420.0" onAction="#handleCancel"/>
+
+        <!-- TableView for Student Records -->
+        <TableView fx:id="studentTable" layoutX="50.0" layoutY="460.0" prefHeight="120.0" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="studentIdColumn" text="Student ID" />
+                <TableColumn fx:id="usernameColumn" text="Username" />
+                <TableColumn fx:id="passwordColumn" text="Password" />
+                <TableColumn fx:id="firstNameColumn" text="First Name" />
+                <TableColumn fx:id="lastNameColumn" text="Last Name" />
+                <TableColumn fx:id="facultyColumn" text="Faculty" />
+                <TableColumn fx:id="emailColumn" text="Email" />
+                <TableColumn fx:id="phoneNoColumn" text="Phone No" />
+                <TableColumn fx:id="genderColumn" text="Gender" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

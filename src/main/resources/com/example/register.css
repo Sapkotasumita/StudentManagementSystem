@@ -1,0 +1,46 @@
+.root {
+    -fx-background-color: #f0f4f7;
+    -fx-font-family: "Arial";
+}
+
+.title-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: #333;
+    -fx-padding: 0 0 20px 0;
+}
+
+.input-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #555;
+    -fx-padding: 5px 0;
+}
+
+.input-field {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ccc;
+    -fx-padding: 0 10px;
+    -fx-font-size: 14px;
+}
+
+.input-field:focused {
+    -fx-border-color: #3a7ebf;
+    -fx-background-color: #ffffff;
+}
+
+.action-button {
+    -fx-background-color: #3a7ebf;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 40px;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px;
+}
+
+.action-button:hover {
+    -fx-background-color: #336699;
+}

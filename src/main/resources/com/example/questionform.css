@@ -1,0 +1,25 @@
+.text-field {
+    -fx-background-color: #E0E0E0;
+    -fx-padding: 5px;
+    -fx-border-radius: 5px;
+}
+
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.button {
+    -fx-background-color: #4CAF50; /* Green background */
+    -fx-text-fill: white;
+    -fx-padding: 5px 20px;
+    -fx-border-radius: 5px;
+}
+
+#saveButton {
+    -fx-background-color: #388E3C; /* Darker green for save button */
+}
+
+#cancelButton {
+    -fx-background-color: #F44336; /* Red background for cancel button */
+}

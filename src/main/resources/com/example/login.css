@@ -1,0 +1,43 @@
+/* styles.css */
+
+#AnchorPane {
+    -fx-background-color: #ecf0f1; /* Light grey background */
+}
+
+.label-title {
+    -fx-font-size: 24px;
+    -fx-text-fill: #3498db; /* Blue title color */
+}
+
+.text-field {
+    -fx-font-size: 14px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 25px;
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #3498db; /* Blue border color */
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.password-field {
+    -fx-font-size: 14px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 25px;
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #3498db; /* Blue border color */
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.button {
+    -fx-font-size: 14px;
+    -fx-pref-width: 100px;
+    -fx-background-color: #3498db; /* Blue button background */
+    -fx-text-fill: white; /* White text color */
+    -fx-border-color: transparent;
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9; /* Darker blue on hover */
+}

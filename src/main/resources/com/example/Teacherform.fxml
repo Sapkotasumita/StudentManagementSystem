@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import java.net.URL?>
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dsgroup1.Controller.TeacherformController">
+    <stylesheets>
+        <URL value="@teacherform.css" />
+    </stylesheets>
+    <children>
+        <!-- Text Fields and Labels -->
+        <TextField fx:id="teacherIdField" layoutX="150.0" layoutY="50.0" />
+        <TextField fx:id="teacherNameField" layoutX="150.0" layoutY="90.0" />
+        <TextField fx:id="teacherEmailField" layoutX="150.0" layoutY="130.0" />
+        <TextField fx:id="teacherPhoneField" layoutX="150.0" layoutY="170.0" />
+
+        <Label layoutX="50.0" layoutY="50.0" text="Teacher ID:" />
+        <Label layoutX="50.0" layoutY="90.0" text="Name:" />
+        <Label layoutX="50.0" layoutY="130.0" text="Email:" />
+        <Label layoutX="50.0" layoutY="170.0" text="Phone:" />
+
+        <!-- Buttons -->
+        <Button layoutX="50.0" layoutY="210.0" onAction="#handleAdd" text="Add" />
+        <Button layoutX="150.0" layoutY="210.0" onAction="#handleRemove" text="Remove" />
+        <Button layoutX="250.0" layoutY="210.0" onAction="#handleSubmit" text="Submit" />
+        <Button layoutX="350.0" layoutY="210.0" onAction="#handleCancel" text="Cancel" />
+
+        <!-- TableView for Teachers -->
+        <TableView fx:id="teacherTable" layoutX="34.0" layoutY="260.0" prefHeight="245.0" prefWidth="540.0">
+            <columns>
+                <TableColumn fx:id="teacherIdColumn" text="Teacher ID" />
+                <TableColumn fx:id="teacherNameColumn" text="Name" />
+                <TableColumn fx:id="teacherEmailColumn" text="Email" />
+                <TableColumn fx:id="teacherPhoneColumn" text="Phone" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>
