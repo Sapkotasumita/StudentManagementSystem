@@ -33,4 +33,3 @@ The system uses a *JavaFX GUI* and stores data in *CSV files*, making it lightwe
 #  How to Run the Project
    Clone the repository:
    git clone https://github.com/sapkotasumita/StudentManagementSystem.git
-#  Install Requuirement
